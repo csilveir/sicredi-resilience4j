@@ -5,6 +5,7 @@ import br.com.sicredi.sicrediresilience4j.repository.GitRepositoryMongo;
 import feign.FeignException;
 import feign.jackson.JacksonDecoder;
 import feign.jackson.JacksonEncoder;
+import io.github.resilience4j.bulkhead.annotation.Bulkhead;
 import io.github.resilience4j.feign.FeignDecorators;
 import io.github.resilience4j.feign.Resilience4jFeign;
 import lombok.extern.slf4j.Slf4j;
@@ -29,6 +30,7 @@ public class GitHubRepositoryService {
         this.gitRepositoryMongo = gitRepositoryMongo;
     }
 
+    @Bulkhead(name = "gitbulkhead", type = Bulkhead.Type.SEMAPHORE)
     public Flux<GitRepositoryDTO> getGitHubRepositories(final String username) {
         var repositoryUrl = this.url + "/users/" + username + "/repos";
         var githubClient =

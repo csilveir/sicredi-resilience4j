@@ -4,6 +4,10 @@ spring:
       uri: mongodb://admin:admin@localhost:27017
       database: transaction
 resilience4j:
+  bulkhead:
+    instances:
+      gitbulkhead:
+        maxConcurrentCalls: 2
   circuitbreaker:
     instances:
       github:
@@ -14,19 +18,13 @@ resilience4j:
         slowCallDurationThreshold: 50ms
         ignoreExceptions:
           - br.com.sicredi.sicrediresilience4j.exception.DomainException
-      mongo:
-        registerHealthIndicator: true
-        slidingWindowSize: 3
-        slidingWindowType: COUNT_BASED
-        slowCallRateThreshold: 50
-        slowCallDurationThreshold: 50s
-
-
   timelimiter:
     instances:
       githubTimelimiter:
         timeoutDuration: 50ms
         cancelRunningFuture: true
+
+
 
 
 management:

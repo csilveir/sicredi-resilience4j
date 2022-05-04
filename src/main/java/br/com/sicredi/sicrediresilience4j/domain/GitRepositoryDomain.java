@@ -37,8 +37,7 @@ public class GitRepositoryDomain {
 
     }
 
-    @CircuitBreaker(name = "mongo", fallbackMethod = "emptyRepository")
-    public GitRepositoryDTO saveLocal(final GitRepositoryDTO gitRepositoryDTO, final String username) {
+    private GitRepositoryDTO saveLocal(final GitRepositoryDTO gitRepositoryDTO, final String username) {
         Optional<GitRepositoryDTO> gitRepositoryDTOOptional = gitRepositoryMongo.findById(gitRepositoryDTO.getId());
         if (gitRepositoryDTOOptional.isEmpty()) {
             gitRepositoryDTO.setUsername(username);
