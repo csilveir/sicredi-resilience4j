@@ -1,7 +1,7 @@
 version: "3.7"
 services:
-  db:
-    container_name: mongo-dev-resilience
+  db_mongo:
+    container_name: mongo-resilience
     image: mongo:4.2
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin

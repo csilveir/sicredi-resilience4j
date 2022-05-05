@@ -5,4 +5,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'sicredi-resilience4j'
+rootProject.name = 'coffeeandit-resilience4j'
