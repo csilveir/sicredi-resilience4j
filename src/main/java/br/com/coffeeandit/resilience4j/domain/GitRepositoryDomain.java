@@ -1,7 +1,7 @@
-package br.com.sicredi.sicrediresilience4j.domain;
+package br.com.coffeeandit.resilience4j.domain;
 
-import br.com.sicredi.sicrediresilience4j.dto.GitRepositoryDTO;
-import br.com.sicredi.sicrediresilience4j.repository.GitRepositoryMongo;
+import br.com.coffeeandit.resilience4j.repository.GitRepositoryMongo;
+import br.com.coffeeandit.resilience4j.dto.GitRepositoryDTO;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
 import lombok.extern.slf4j.Slf4j;

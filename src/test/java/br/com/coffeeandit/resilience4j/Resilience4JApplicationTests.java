@@ -1,10 +1,10 @@
-package br.com.sicredi.sicrediresilience4j;
+package br.com.coffeeandit.resilience4j;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SicrediResilience4jApplicationTests {
+class Resilience4JApplicationTests {
 
 	@Test
 	void contextLoads() {

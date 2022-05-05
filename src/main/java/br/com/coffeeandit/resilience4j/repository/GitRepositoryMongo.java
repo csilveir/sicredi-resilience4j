@@ -1,6 +1,6 @@
-package br.com.sicredi.sicrediresilience4j.repository;
+package br.com.coffeeandit.resilience4j.repository;
 
-import br.com.sicredi.sicrediresilience4j.dto.GitRepositoryDTO;
+import br.com.coffeeandit.resilience4j.dto.GitRepositoryDTO;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

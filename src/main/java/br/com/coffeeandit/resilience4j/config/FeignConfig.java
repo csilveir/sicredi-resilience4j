@@ -1,4 +1,4 @@
-package br.com.sicredi.sicrediresilience4j.config;
+package br.com.coffeeandit.resilience4j.config;
 
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.context.annotation.Bean;

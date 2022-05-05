@@ -17,11 +17,11 @@ resilience4j:
         slowCallRateThreshold: 50
         slowCallDurationThreshold: 50ms
         ignoreExceptions:
-          - br.com.sicredi.sicrediresilience4j.exception.DomainException
+          - br.com.coffeeandit.resilience4j.exception.DomainException
   timelimiter:
     instances:
       githubTimelimiter:
-        timeoutDuration: 50ms
+        timeoutDuration: 80ms
         cancelRunningFuture: true
 
 
@@ -40,4 +40,4 @@ management:
       show-details: always
 
 twitter:
-  url: https://api.github.com
+  url: https://api.githubaaa.com

@@ -1,7 +1,7 @@
-package br.com.sicredi.sicrediresilience4j.api;
+package br.com.coffeeandit.resilience4j.api;
 
-import br.com.sicredi.sicrediresilience4j.domain.GitRepositoryDomain;
-import br.com.sicredi.sicrediresilience4j.dto.GitRepositoryDTO;
+import br.com.coffeeandit.resilience4j.domain.GitRepositoryDomain;
+import br.com.coffeeandit.resilience4j.dto.GitRepositoryDTO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

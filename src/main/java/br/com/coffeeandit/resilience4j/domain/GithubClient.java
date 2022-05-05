@@ -1,6 +1,6 @@
-package br.com.sicredi.sicrediresilience4j.domain;
+package br.com.coffeeandit.resilience4j.domain;
 
-import br.com.sicredi.sicrediresilience4j.dto.GitRepositoryDTO;
+import br.com.coffeeandit.resilience4j.dto.GitRepositoryDTO;
 import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

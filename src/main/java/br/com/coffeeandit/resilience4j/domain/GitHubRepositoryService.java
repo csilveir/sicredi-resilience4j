@@ -1,7 +1,7 @@
-package br.com.sicredi.sicrediresilience4j.domain;
+package br.com.coffeeandit.resilience4j.domain;
 
-import br.com.sicredi.sicrediresilience4j.dto.GitRepositoryDTO;
-import br.com.sicredi.sicrediresilience4j.repository.GitRepositoryMongo;
+import br.com.coffeeandit.resilience4j.dto.GitRepositoryDTO;
+import br.com.coffeeandit.resilience4j.repository.GitRepositoryMongo;
 import feign.FeignException;
 import feign.jackson.JacksonDecoder;
 import feign.jackson.JacksonEncoder;

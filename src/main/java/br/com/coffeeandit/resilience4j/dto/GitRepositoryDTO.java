@@ -1,4 +1,4 @@
-package br.com.sicredi.sicrediresilience4j.dto;
+package br.com.coffeeandit.resilience4j.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
